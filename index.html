@@ -1,280 +1,149 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>iCoder,Haven for Programmers!</title>
-    <style>
-        .modal fade {
-            padding: 15px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Oswald&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">iCoder</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Topics
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Technology</a></li>
-                            <li><a class="dropdown-item" href="#">Web Development</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Support</a></li>
-                            <li><a class="dropdown-item" href="#">Write for Us</a></li>
-
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-                <div class="mx-2">
-                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
-                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
-
-                </div>
-            </div>
-        </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#about">About Me</a> </li>
+            <li><a href="#education">Education</a> </li>
+            <li><a href="#skills">Skills</a> </li>
+            <li><a href="#contact">Contact Me</a> </li>
+        </ul>
     </nav>
-    <!-- Login Modal -->
-    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="LoginModalLabel">Login to iCoder</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="main">
+            <h1 class="heading">Hello, I'm <span style="color: rgb(167, 64, 121);">Gudiyakumari Sharma.</span> <br> I'm
+                a Full-Stack Web Developer </h1>
+            <button class="btn">HIRE ME</button>
+        </div>
+    </section>
+<!-- About section -->
+    <section id="about">
+        <h1 class="heading">ABOUT ME</h1>
+        <div id="pic">
+            <img src="photo-1.jpg" alt="">
+            <div id="intro">
+                <h2>GUDIYAKUMARI SHARMA</h2>
+                <p>I am a competent with some technical skills for designing Web Application and Website Development. I
+                    would like to be a part of an organization where I could use and enhance my knowledge and talent for
+                    the development of both the organization and myself. <br><br>Strong in developing Responsive &
+                    Interactive websites | Proficient in CSS3, HTML5, Bootstrap3,4, JavaScript and React JS | Command on
+                    Python and MySQL.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eductaion Part -->
+    <section id="education">
+        <h1 class="heading">EDUCATION</h1>
+        <div id="edu">
+            <div class="box">
+                <img src="grad.jpg" alt="">
+                <h2>Under Graduation</h2>
+                <p>Sant Gadge Baba Amravati University, Maharashtra <br> B.E. in Electrical (Electronics & Power) <br>
+                    7.09 CGPA </p>
+            </div>
+
+            <div class="box">
+                <img src="school.jpg" alt="">
+                <h2>Senior Secondary</h2>
+                <p> G.B.M.M Jr. College, Hinganghat, Maharashtra <br> 67.69% </p>
+            </div>
+
+            <div class="box">
+                <img src="school.jpg" alt="">
+                <h2>Primary & SSC Education</h2>
+                <p>Bansilal Katariya High School, Hinganghat, Maharashtra<br> 86.55% </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="myskills">
+        <h1 class="heading">SKILLS</h1>
+        <div id="skills">
+            <div class="box">
+                <ul>
+                    <h2>Technical Skills</h2>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>BootStrap3,4</li>
+                    <li>React Js</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <ul>
+                    <h2>Soft Skills</h2>
+                    <li>Communication Skills</li>
+                    <li>Responsive design skills</li>
+                    <li>Critical thinking, creativity, and problem-solving</li>
+                    <li>Confidence</li>
+                    <li>Management (people, time and project)</li>
+                    <li>Teamwork and collaboration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact_me">
+        <h1 class="heading">CONTACT ME</h1>
+        <div id="contact">
+            <div class="box">
+                <a href="https://myaccount.google.com/u/1/?utm_source=OGB&utm_medium=app&pli=1" target="_blank"><i
+                        class="fa fa-google-plus-official" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/gudiyakumari-sharma-7770b020a/" target="_blank"><i
+                        class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.instagram.com/gudiya24/" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i>
+                </a>
+
+                <a href="#" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-info">
+
+                <div><i class="fa fa-envelope" aria-hidden="true"> &nbsp; kgudiya3995@gmail.com</i></div>
+
+                <div><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp;9421815867</i></div>
+
+                <div><i class="fa fa-map-marker" aria-hidden="true"> &nbsp; Maroti Ward, Hinganghat, Maharashtra - 442301</i>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Signup Modal -->
-    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="SignUpModalLabel">Get an iCoder Account</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Create Account</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
         </div>
-    </div>
-
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="photo1.jpg" class="d-block w-100" alt="..">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Welcome to iCoder</h2>
-                    <p>Technology News, Devleopment and Trends</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-primary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="photo2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>The Best Coding Blog</h2>
-                    <p>Technology News, Devleopment and Trends</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-primary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="photo3.jpg" class="d-block w-100" alt="..">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Award Winning Blog</h2>
-                    <p>Technology News, Devleopment and Trends</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-primary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    </div>
-
-    <div class="container my-4">
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Gobal Conferences</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="200" src="photo4.jpg" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Learn Designing</h3>
-                        <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="200" src="photo5.jpg" alt="">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Coding Conferences</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="200" src="photo6.jpg" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div
-                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Web Designing</h3>
-                        <div class="mb-1 text-muted">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                        <a href="#" class="stretched-link">Continue reading</a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="200" src="photo7.jpg" alt="">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="container">
-        <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2020-2020 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-    </footer>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+    </section>>
 </body>
 
 </html>

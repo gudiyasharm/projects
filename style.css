@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+}
+
+.navbar ul{
+display: flex;
+list-style: none;
+/* text-decoration: none; */
+margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: 'Oswald', sans-serif;}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('home.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.heading{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white;
+    font-weight: bold;
+}
+
+/* About Section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin:50px;
+    background-color: rgb(240, 221, 228);
+}
+
+#about h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 800px;
+    height: 220px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2{
+margin-bottom: 20px;
+}
+
+/* Education Section */
+#education{
+    background-color:rgb(224, 230, 188);
+    margin: 50px;
+}
+#education h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+#edu{
+    margin: 34px;
+    /* padding: 10px; */
+    display: flex;
+}
+#edu .box{ 
+    display: flex;
+    flex-direction: column;
+    border: 2px solid brown;
+    padding: 34px;
+    margin:20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#edu .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#edu .box h2{
+text-align: center;
+margin: 5px 5px;
+}
+
+#edu .box p{
+    text-align: center;
+}
+
+/* Skills Sections */
+
+#myskills{
+    background-color: rgb(202, 230, 209);
+    margin: 50px;
+}
+
+#myskills h1{
+    font-size: 3rem;
+    font-weight: bolder; 
+}
+
+#skills{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .box{ 
+    border: 2px solid rgb(85, 17, 17);
+    padding: 34px;
+    margin:20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#skills .box h2{
+    text-align: center;
+    margin: 5px 5px;
+    }
+
+    /* contact section styling */
+
+#contact_me{
+    background-color: rgb(175, 233, 189);
+    margin: 50px;
+}
+
+#contact_me h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+#contact{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box a{
+    height: 70px;
+    width: 70px;
+    background-color: #f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    line-height: 80px;
+    box-shadow: 1px 4px 2px 2px #2d365a;
+}
+
+.box a i{
+    font-size: 30px;
+    transition: all 0.3s linear;  
+}
+
+.fa-google-plus-official{
+    color: #e84393;
+}
+
+.fa-linkedin-square{
+    color: #3d53c4;
+}
+
+.fa-instagram{
+    color: purple;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    margin-bottom: 20px;
+}
+
+.contact-info i{
+    padding: 5px;
+}
+
+/* .contact-info  */
+
